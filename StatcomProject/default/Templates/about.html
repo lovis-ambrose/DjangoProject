@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css-1/bootstrap.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <!-- to top button script -->
+    <script src="{% static 'css/script.js' %}"></script>
+    <!-- bootstrap -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- new links -->
+    <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="{% static 'css-1/bootstrap.min.css' %}">
+   <!-- style css -->
+   <link rel="stylesheet" href="{% static 'css-1/style.css' %}">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="{% static 'css-1/responsive.css' %}">
+   <link rel="stylesheet" href="{% static 'css-1/owl.carousel.min.css' %}">
+   <!-- fevicon -->
+   <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="{% static 'css-1/jquery.mCustomScrollbar.min.css' %}">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+   
+    <title>Stratcom | About Us</title>
+</head>
+<body>
+   <!-- Header section with nav bar -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'images/logo.png' %}" alt="" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gallery/">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/address/">Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/book/">Placements</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/login/">Login</a></li>
+                <li><a class="dropdown-item" href="/index/">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+   </nav>
+   <!-- new banner -->
+   <section class="banner_main">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-7 col-lg-7">
+             <div class="text-bg">
+                <h1>Trusted and <br>Professional Tech Trainers</h1>
+                <span>for your IT career</span>
+                <p>We take a further step to link you to Tech companies in the country and abroad</p>
+                <a href="#">About us</a>
+             </div>
+          </div>
+          <div class="col-md-5 col-lg-5">
+             <div class="ban_img">
+                <figure><img src="{% static 'images/ba_ing.png' %}" alt="#" /></figure>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- end banner -->
+    <!-- about section -->
+   <div id="about" class="about">
+    <div class="container-fluid">
+       <div class="row">
+          <div class="col-md-12 col-lg-7">
+             <div class="about_box">
+                <div class="titlepage">
+                   <h2><strong class="yellow">About US</strong><br> WE HELP YOU explore your talents</h2>
+                </div>
+                <h3>EVERYTHING YOU NEED IN ONE SOLUTION</h3>
+                <span>HELP YOUR NEXT CAREER MOVE MORE SMOOTHER AND <br> MORE EFFICIENT</span>
+                <p>
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of usingt
+                </p>
+                <span class="try">All you need is to send us your placement letter</span>
+                <a class="read_morea" href="#">Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+             </div>
+          </div>
+          <div class="col-md-12 col-lg-5">
+             <div class="about_img">
+                <figure><img src="{% static 'images/stratcomps.jpg' %}" alt="#" /></figure>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- about section -->
+ <!-- service section -->
+ <div id="service" class="service">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-7">
+             <div class="titlepage">
+                <h2><strong class="yellow">services</strong><br>OUR IT PASSION</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-4 col-sm-6">
+             <div id="ho_color" class="service_box">
+                <img src="{% static 'images/graphics.jpeg' %}" alt="#" height="100px" />
+                <h3>Graphics Designinig</h3>
+                <p>We aim at giving you highly demanded skills required by top companies in the region, </p>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+             <div id="ho_color" class="service_box">
+                <img src="{% static 'images/webdev.jpeg' %}" alt="#" height="100px" />
+                <h3>Web Development</h3>
+                <p>No skills required to do web, we teach you from scratch and make you a senior developer, </p>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+             <div id="ho_color" class="service_box">
+                <img src="{% static 'images/analysisgud.jpeg' %}" alt="#" height="100px" />
+                <h3>Systems Analysis and design</h3>
+                <p>Do you want to learn systems design, implementation and maintenance, we are the best choice</p>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+             <div id="ho_color" class="service_box">
+                <img src="{% static 'images/networks.jpeg' %}" alt="#" height="100px" />
+                <h3>Networks</h3>
+                <p>Become a senior CISCO and HUAWEI networks engineer, </p>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+             <div id="ho_color" class="service_box">
+                <img src="{% static 'images/embedded.png' %}" alt="#" height="100px" />
+                <h3>Embedded systems</h3>
+                <p>We help you build a system of systems, </p>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+             <div id="ho_color" class="service_box">
+                <img src="{% static 'images/service_icon2.png' %}" alt="#" height="100px" />
+                <h3>Mobile app development</h3>
+                <p>We build moble apps both for Android and Apple, we got you covered </p>
+             </div>
+          </div>
+          <div class="col-md-12">
+             <a class="read_more" href="#">Read More</a>
+          </div>
+       </div>
+    </div>
+ </div>
+ </div>
+ <!-- service section -->
+ <!-- portfolio -->
+ <div class="portfolio">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12 ">
+             <div class="titlepage">
+                <h2><strong class="yellow">Sample Images</strong><br>We are your right choice</h2>
+                <span>Websites</span>
+                <p>Stratcom Communications and Computer Solutions Ltd, is a registered IT Company in Uganda that offers a range of computer services</p>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="myCarousel" class="carousel slide portfolio_Carousel " data-ride="carousel">
+       <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+          <div class="carousel-item active">
+             <div class="container">
+                <div class="carousel-caption ">
+                   <div class="row">
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat1.JPG' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat2.JPG' %}" alt="#" height="350px" width="250px"/>
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat5.JPG' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat4.JPG' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-12">
+                         <a class="read_more" href="#">Read More</a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+             <div class="container">
+                <div class="carousel-caption">
+                   <div class="row">
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat6.JPG' %}" alt="#" height="350px"  />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat8.JPG' %}" alt="#" height="350px"  />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat10.JPG' %}" alt="#" height="350px"  />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/strat11.JPG' %}" alt="#" height="350px"  />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-12">
+                         <a class="read_more" href="#">Read More</a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+             <div class="container">
+                <div class="carousel-caption">
+                   <div class="row">
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/bk.JPG' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/stratcomps.jpg' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/potf3.jpg' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                         <div class="portfolio_img">
+                            <img src="{% static 'images/potf4.jpg' %}" alt="#" height="350px" width="250px" />
+                            <div class="middle">
+                               <div class="text2">View More</div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-12">
+                         <a class="read_more" href="#">Read More</a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+       </a>
+       <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+       </a>
+    </div>
+ </div>
+ <!-- end portfolio section -->
+ <!-- team  section -->
+ <div id="team" class="team">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2><strong class="yellow">Team</strong><br>We Have a Professional Training Team.</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-12">
+             <div id="team" class="carousel slide team_Carousel " data-ride="carousel">
+                <ol class="carousel-indicators">
+                   <li data-target="#team" data-slide-to="0" class="active"></li>
+                   <li data-target="#team" data-slide-to="1"></li>
+                   <li data-target="#team" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                   <div class="carousel-item active">
+                      <div class="container">
+                         <div class="carousel-caption ">
+                            <div class="row">
+                               <div class="col-md-4 col-sm-6">
+                                  <div id="ho_bg" class="team_img">
+                                     <img src="{% static 'images/team1.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6">
+                                  <div id="ho_bg" class="team_img">
+                                     <img src="{% static 'images/team2.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6 d_none1">
+                                  <div id="ho_bg" class="team_img ">
+                                     <img src="{% static 'images/team3.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="carousel-item">
+                      <div class="container">
+                         <div class="carousel-caption">
+                            <div class="row">
+                               <div class="col-md-4 col-sm-6 d_none1">
+                                  <div id="ho_bg" class="team_img ">
+                                     <img src="{% static 'images/team1.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6">
+                                  <div id="ho_bg" class="team_img">
+                                     <img src="{% static 'images/team2.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6">
+                                  <div id="ho_bg" class="team_img">
+                                     <img src="{% static 'images/team3.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="carousel-item">
+                      <div class="container">
+                         <div class="carousel-caption">
+                            <div class="row">
+                               <div class="col-md-4 col-sm-6">
+                                  <div id="ho_bg" class="team_img">
+                                     <img src="{% static 'images/team1.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6 d_none1">
+                                  <div id="ho_bg" class="team_img ">
+                                     <img src="{% static 'images/team2.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6">
+                                  <div id="ho_bg" class="team_img">
+                                     <img src="{% static 'images/team3.png' %}" alt="#" />
+                                     <div class="ho_socal">
+                                        <ul class="social_icont">
+                                           <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                           <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <a class="carousel-control-prev" href="#team" role="button" data-slide="prev">
+                   <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-control-next" href="#team" role="button" data-slide="next">
+                   <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- end team  section -->
+ <!-- testimonial -->
+ <div id="client" class="testimonial">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2><strong class="yellow">Testimonial</strong><br>What our clients say</h2>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="testimo" class="carousel slide testimonial_Carousel " data-ride="carousel">
+       <ol class="carousel-indicators">
+          <li data-target="#testimo" data-slide-to="0" class="active"></li>
+          <li data-target="#testimo" data-slide-to="1"></li>
+          <li data-target="#testimo" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+          <div class="carousel-item active">
+             <div class="container">
+                <div class="carousel-caption ">
+                   <div class="row">
+                      <div class="col-md-6 offset-md-3">
+                         <div class="test_box">
+                            <p>
+                              Stratcom helped me learn networking and again connected me to the company where i am working currently.
+                              I am a proud networks engineer. Great thanks to the team.
+                           </p>
+                            <i><img src="{% static 'images/cos.jpg' %}" alt="#" /></i> <span>Eng. Tim Rodgers</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+             <div class="container">
+                <div class="carousel-caption">
+                   <div class="row">
+                      <div class="col-md-6 offset-md-3">
+                         <div class="test_box">
+                            <p>
+                              My software engineering journey started at Stratcom; from basics to senior development. 
+                              I am a proud python software developer working with best IT companies in Uganda.
+                           </p>
+                            <i><img src="{% static 'images/cos.jpg' %}" alt="#" /></i> <span>Eng. Mutungi Ambrozio</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+             <div class="container">
+                <div class="carousel-caption">
+                   <div class="row">
+                      <div class="col-md-6 offset-md-3">
+                         <div class="test_box">
+                            <p>
+                              my time at Stratcom was a discovery, my way of doing things changed when i enrolled for an Internship placement.
+                              I would not be a famous graphics designer without Stratcom team. Thumbs up. 
+                           </p>
+                            <i><img src="{% static 'images/cos.jpg' %}" alt="#" /></i> <span>Designer Pauline Tomaino</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <a class="carousel-control-prev" href="#testimo" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+       </a>
+       <a class="carousel-control-next" href="#testimo" role="button" data-slide="next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+       </a>
+    </div>
+ </div>
+ <!-- end testimonial -->
+ <!-- contact  section -->
+ <div id="contact" class="contact ">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2><strong class="yellow">Contact us</strong><br>Request a call back</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-8 offset-md-2">
+             <form id="post_form" class="contact_form">
+                <div class="row">
+                   <div class="col-md-12 ">
+                      <input class="contact_control" placeholder=" Name" type="type" name="Name">
+                   </div>
+                   <div class="col-md-12">
+                      <input class="contact_control" placeholder="Email" type="type" name="Email">
+                   </div>
+                   <div class="col-md-12">
+                      <input class="contact_control" placeholder="Phone Number " type="type" name="Phone Number ">
+                   </div>
+                   <div class="col-md-12">
+                      <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                   </div>
+                   <div class="col-md-12">
+                      <button class="send_btn">Send</button>
+                   </div>
+             </form>
+          </div>
+       </div>
+    </div>
+ </div>
+ </div>
+    <!-- go to top button -->
+    <button onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
+    <!-- footer fully responsive -->
+    <footer class="flex-rw">
+  
+        <ul class="footer-list-top">
+          <li>
+            <h4 class="footer-list-header">About STRATCOM</h4></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">know more about us</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">promotions</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">Internship placements</a></li>
+      
+          <li><a href='#' itemprop="significantLink" class="generic-anchor footer-list-anchor">job-openings</a></li>
+      
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">events</a></li>
+        </ul>
+        <ul class="footer-list-top">
+          <li>
+            <h4 class="footer-list-header">All in one package</h4></li>
+      
+      
+          <li><a href='#' class="generic-anchor footer-list-anchor">Graphics design</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor">web development</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor">Networks</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor">Embedded systems</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" target="_blank">Mobile app development</a></li>
+        </ul>
+        <ul class="footer-list-top">
+          <li id='help'>
+            <h4 class="footer-list-header">Please Help Me</h4></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">contact</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+          <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink"></a></li>
+          <li id='user-registration'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">Address</a></li>
+          <li id='order-tracking'><a href='#' itemprop="significantLink" class="generic-anchor footer-list-anchor">Events</a></li>
+        </ul>
+        <section class="footer-social-section flex-rw">
+            <span class="footer-social-overlap footer-social-connect">
+            CONNECT <span class="footer-social-small">with</span> US
+            </span>
+            <span class="footer-social-overlap footer-social-icons-wrapper">
+            <a href="#" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+            <a href="#" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+            <a href="#" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+            </span>
+        </section>
+        <section class="footer-bottom-section flex-rw">
+      <div class="footer-bottom-wrapper">   
+      <i class="fa fa-copyright" role="copyright">
+       
+      </i> @2022 Stratcom in <address class="footer-address" role="company address">Kavule, Kampala</address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
+          </div>
+          <div class="footer-bottom-wrapper">
+          <a href="#" class="generic-anchor" rel="nofollow">Terms</a> | <a href="#" class="generic-anchor" rel="nofollow">Privacy</a>
+            </div>
+        </section>
+    </footer>
+    <!-- scripts -->
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/popper.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+   <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+   <!-- sidebar -->
+   <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+   <script src="{% static 'js/custom.js' %}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

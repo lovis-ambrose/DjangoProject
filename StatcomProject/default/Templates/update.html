@@ -1,0 +1,46 @@
+<div class="update" ondblclick="remove();">
+    <h1>Gallery Update</h1>
+    <form action="" id="galleryForm">
+        {% csrf_token %}
+        <input type="text" placeholder="caption" name="caption" value="{{gallery.caption}}">
+        <img src="{{gallery.pic.url}}" id="ppp" alt="pic">
+        <input type="file" name="pic" onchange="changeImage(this)">
+        <button value = "{{gallery.id}}" onclick="updateGallery(this)">Update Information</button>
+    </form>
+</div>
+<style>
+    .update h1{
+        background: rgb(27, 27, 78);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .update input{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border: 1px solid grey;
+        border-radius: 3px;
+        margin: 10px auto;
+        margin-left: 10px;
+    }
+    .update input:focus{
+        outline: none;
+    }
+    .update input[type="file"]{
+        border: none;
+    }
+    .update img{
+        width: 30%;
+        margin-left: 10px;
+    }
+    .update button{
+        background: green;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        width: 100%;
+    }
+</style>

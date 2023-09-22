@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css-1/bootstrap.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/book.css' %}">
+  <!-- <link rel="stylesheet" href="{% static 'css/generalcss.css' %}"> -->
+  <!-- to top button script -->
+  <script src="{% static 'css/script.js' %}"></script>
+  <!-- bootstrap -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- new links -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{% static 'css-1/bootstrap.min.css' %}">
+  <!-- style css -->
+  <link rel="stylesheet" href="{% static 'css-1/style.css' %}">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="{% static 'css-1/responsive.css' %}">
+  <link rel="stylesheet" href="{% static 'css-1/owl.carousel.min.css' %}">
+  <!-- fevicon -->
+  <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css-1/jquery.mCustomScrollbar.min.css' %}">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+<title>Stratcom | Book Page</title>
+  
+</head>
+
+<body>
+  <!-- navbar responsive -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'images/logo.png' %}" alt="" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery/">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/address/">Address</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/book/">Placements</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/login/">Login</a></li>
+              <li><a class="dropdown-item" href="/index/">Register</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- head banner -->
+  <div class="banner">
+    <div class="heads">
+      <h2>Placement</h2>
+    </div>
+  </div>
+  <!-- go to top button -->
+  <button onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
+  <!-- register form -->
+  <div class="container">
+    <h4>Fill in the right details and submit</h4>
+    <form action="#">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Middle Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="othername" name="othername" placeholder="Your middle name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Course</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="course" name="course" placeholder="Your course.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Institution</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="institution" name="institution" placeholder="Your institution.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Valid Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Phone number</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="phone" name="phone" placeholder="Your phone.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="letter">Attach request letter</label>
+        </div>
+        <div class="col-75">
+          <input type="file" id="letter" name="letter" accept="/*" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="field">Interested field</label required>
+        </div>
+        <div class="col-75">
+          <select id="field" name="field">
+            <option value="australia">Web development</option>
+            <option value="canada">Graphics design</option>
+            <option value="usa">Computer repair and maintenance</option>
+            <option value="australia">Networks</option>
+            <option value="australia">Software development</option>
+            <option value="australia">mobile app development</option>
+            <option value="australia">Embedded systems</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Add a brief description</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+        <input type="reset" onclick="alert('form has successfully been reset!')">
+      </div>
+    </form>
+  </div>
+  <!-- register form ends -->
+
+  <!-- footer fully responsive -->
+  <footer class="flex-rw">
+
+    <ul class="footer-list-top">
+      <li>
+        <h4 class="footer-list-header">About STRATCOM</h4>
+      </li>
+      <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">know more about us</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">promotions</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">Internship placements</a>
+      </li>
+
+      <li><a href='#' itemprop="significantLink" class="generic-anchor footer-list-anchor">job-openings</a></li>
+
+      <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">events</a></li>
+    </ul>
+    <ul class="footer-list-top">
+      <li>
+        <h4 class="footer-list-header">All in one package</h4>
+      </li>
+
+
+      <li><a href='#' class="generic-anchor footer-list-anchor">Graphics design</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor">web development</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor">Networks</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor">Embedded systems</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor" target="_blank">Mobile app development</a></li>
+    </ul>
+    <ul class="footer-list-top">
+      <li id='help'>
+        <h4 class="footer-list-header">Please Help Me</h4>
+      </li>
+      <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">contact</a></li>
+      <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+      <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink"></a></li>
+      <li id='user-registration'><a href='#' class="generic-anchor footer-list-anchor"
+          itemprop="significantLink">Address</a></li>
+      <li id='order-tracking'><a href='#' itemprop="significantLink"
+          class="generic-anchor footer-list-anchor">Events</a></li>
+    </ul>
+    <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+        CONNECT <span class="footer-social-small">with</span> US
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+        <a href="#" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i
+            class="fa fa-pinterest"></i></a>
+        <a href="#" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i
+            class="fa fa-facebook"></i></a>
+        <a href="#" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i
+            class="fa fa-twitter"></i></a>
+        <a href="#" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i
+            class="fa fa-instagram"></i></a>
+        <a href="#" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i
+            class="fa fa-youtube"></i></a>
+        <a href="#" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i
+            class="fa fa-google-plus"></i></a>
+      </span>
+    </section>
+    <section class="footer-bottom-section flex-rw">
+      <div class="footer-bottom-wrapper">
+        <i class="fa fa-copyright" role="copyright">
+
+        </i> @2022 Stratcom in <address class="footer-address" role="company address">Kavule, Kampala</address><span
+          class="footer-bottom-rights"> - All Rights Reserved - </span>
+      </div>
+      <div class="footer-bottom-wrapper">
+        <a href="#" class="generic-anchor" rel="nofollow">Terms</a> | <a href="#" class="generic-anchor"
+          rel="nofollow">Privacy</a>
+      </div>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+</html>

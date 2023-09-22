@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+}
+.login{
+    width: 35%;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login h4{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(20, 19, 19);
+    padding: 10px;
+}
+.login img{
+    width: 20%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.login input{
+    width: 94%;
+    padding: 7px;
+    margin: 5px 0;
+}
+.login button{
+    width: 100%;
+    padding: 10px;
+    background: rgb(52, 52, 221);
+    color: white;
+    border: 0;
+}
+.login button:hover{
+    background: rgb(25, 25, 93);
+}
+.login div{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.login div a{
+    text-decoration: none;
+    padding: 20px 0;
+}
+.login div a:hover{
+    color: red;
+    font-weight: 700;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

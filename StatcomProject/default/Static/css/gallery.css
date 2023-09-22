@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+  
+.main{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background: url("../images/gallery1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main::before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+.main div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 60%;
+    border: 1px solid rgb(255, 220, 220);
+    border-radius: 5px;
+    padding: 20px;
+}
+.main div p{
+    padding: 10px;
+}
+.gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 1%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+.gallery .gallery_div{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.gallery .gallery_div img{
+    width: inherit;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.gallery .gallery_div::before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgb(26, 26, 26));
+}
+.gallery figcaption{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    background: black;
+}
+.gallery .gallery_div div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+.gallery .gallery_div button{
+    padding: 5px 20px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallery .gallery_div button:last-child{
+    background: red;
+}
+.viewall{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+.viewall button{
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: rgb(52, 52, 221);
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 20px;
+}

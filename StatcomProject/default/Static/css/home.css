@@ -1,0 +1,437 @@
+
+    /* head banner */
+    .banner{
+      background-image: url("../images/banner.jpg");
+      height: 50vh;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .heads h2{
+      color:#fff;
+      text-align: center;
+      margin-top: 10%;
+      margin-left: 42%;
+      margin-right: 42%;
+      border-radius: 5px;
+    }
+      /*responsive new banner */
+  @media screen and (max-width: 600px){
+    .banner{
+      background-image: url("../images/banner.jpg");
+      height: 20vh;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .heads h2{
+      color:#fff;
+      text-align: center;
+      margin-top: 10%;
+      margin-left: 30%;
+      margin-right: 30%;
+      border-radius: 5px;
+    }
+  }
+    /* hero section */
+    #hero {
+      height: 70vh;
+      padding: 0 80px;
+      background-position: top 30% right 30%;
+  }
+  #banner {
+    height: 20vh;
+}
+  #newsletter .form {
+    width: 100%;
+  }
+
+/* extra small screens */
+@media (max-width: 477px) {
+    #header {
+      padding: 10px 30px;
+  }
+    #hero h2 {
+      font-size: 32px;
+  }
+    #hero h1 {
+    font-size: 38px;
+  }
+    #hero {
+    padding: 0 20px;
+    background-position: 55%;
+  }
+    #banner {
+      height: 40vh;
+  }
+    #newsletter .form{
+      width: 100%;
+    }
+    #newsletter{
+      padding: 40px 20px;
+    }
+}
+
+
+/* Home page */
+#hero{
+    background-image: url(../images/IMG-20220608-WA0012.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 25% 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-color: grey;
+    color: #19219e;
+    margin: 5px;
+    padding: 10px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5%;
+}
+/* banner  centered */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/person.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: black;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+/* News letter */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-image: url("../images/person.jpg"); */
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* footer fully responsive */
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .generic-anchor {
+    color: #8DB9ED;
+  }
+  .generic-anchor:visited {
+    color: #8DB9ED;
+  }
+  .generic-anchor:hover {
+    color: #ccc;
+  }
+  
+  .flex-rw {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 10em "Oswald", sans-serif;
+    color: #9b9b9b;
+    line-height: 1;
+  }
+  
+  footer {
+    background: #373737;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  .footer-list-top {
+    width: 33.333%;
+  }
+  
+  .footer-list-top > li {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .footer-list-header {
+    padding: 10px 0 5px 0;
+    color: #fff;
+    font: 2.3vw "Oswald", sans-serif;
+  }
+  
+  .footer-list-anchor {
+    font: 1.3em "Open Sans", sans-serif;
+  }
+  
+  .footer-social-section {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .footer-social-section::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    border-top: 1px solid #ccc;
+    width: calc(100% - 20px);
+  }
+  
+  .footer-social-overlap {
+    position: relative;
+    z-index: 2;
+    background: #373737;
+    padding: 0 20px;
+  }
+  
+  .footer-social-connect {
+    display: flex;
+    align-items: center;
+    font: 3.5em "Oswald", sans-serif;
+    color: #fff;
+  }
+  
+  .footer-social-small {
+    font-size: 0.6em;
+    padding: 0px 20px;
+  }
+  
+  .footer-social-overlap > a {
+    font-size: 3em;
+  }
+  
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0.38em;
+  }
+  
+  .footer-bottom-section {
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom-section > div:first-child {
+    margin-right: auto;
+  }
+  
+  .footer-bottom-wrapper {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .footer-address {
+    display: inline;
+    font-style: normal;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer-list-header {
+      font-size: 2em;
+    }
+  
+    .footer-list-anchor {
+      font-size: 1.1em;
+    }
+  
+    .footer-social-connect {
+      font-size: 2.5em;
+    }
+  
+    .footer-social-overlap > a {
+      font-size: 2.24em;
+    }
+  
+    .footer-bottom-wrapper {
+      font-size: 1.3em;
+    }
+  }
+  @media only screen and (max-width: 568px) {
+    main {
+      font-size: 5em;
+    }
+  
+    .footer-list-top {
+      width: 100%;
+    }
+  
+    .footer-list-header {
+      font-size: 3em;
+    }
+  
+    .footer-list-anchor {
+      font-size: 1.5em;
+    }
+  
+    .footer-social-section {
+      justify-content: center;
+    }
+  
+    .footer-social-section::after {
+      top: 25%;
+    }
+  
+    .footer-social-connect {
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+  
+    .footer-social-overlap {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer-social-icons-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .footer-social-overlap > a:not(:first-child) {
+      margin-left: 20px;
+    }
+  
+    .footer-bottom-section {
+      padding: 0 5px 10px 5px;
+    }
+  
+    .footer-bottom-wrapper {
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .footer-social-overlap > a {
+      margin: auto;
+    }
+  
+    .footer-social-overlap > a:not(:first-child) {
+      margin-left: 0;
+    }
+  
+    .footer-bottom-rights {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .footer-list-header {
+      font-size: 2.2em;
+    }
+  
+    .footer-list-anchor {
+      font-size: 1.2em;
+    }
+  
+    .footer-social-connect {
+      font-size: 2.4em;
+    }
+  
+    .footer-social-overlap > a {
+      font-size: 2.24em;
+    }
+  
+    .footer-bottom-wrapper {
+      font-size: 1.3em;
+    }
+  }
+  /* go to top button */
+  #myTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: royalblue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
